@@ -16,6 +16,6 @@ for (let i=0; i<botoes.length; i++){
 
 const contador = document. querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-06-15T00:00:00");
-let tempoatual = new Date();
+let tempoAtual = new Date();
 
 contador[0].textContent = tempoObjetivo1 - tempoAtual;
