@@ -17,7 +17,7 @@ for (let i=0; i<botoes.length; i++){
 const contador = document. querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-06-15T00:00:00");
 
-contadores[0].textContent = calculaTempo(tempoObjetivo1)
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
 function calculaTempo(tempoObjetivo){
     let tempoAtual = new Date();
@@ -27,7 +27,7 @@ function calculaTempo(tempoObjetivo){
     let horas = Math.floor(minutos/60);
     let dias = Math.floor(horas/24);
 
-    segundos =60;
+    segundos = 60;
     minutos =60;
     horas =60;
 
