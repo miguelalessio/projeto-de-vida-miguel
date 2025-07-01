@@ -14,7 +14,6 @@ for (let i=0; i<botoes.length; i++){
         textos[i].classList.add("ativo");
     }
 }
-
 const contadores = document. querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-06-15T00:00:00");
 const tempoObjetivo2 = new Date("2028-06-15T00:00:00");
@@ -38,3 +37,15 @@ function calculaTempo(tempoObjetivo){
     return (dias + " dias " + horas + " horas " + minutos +" minutos " + segundos + " segundos ");
 }
 
+function atualiazaCronometro(){
+    for (let i=0; i<contadores.length; i++){
+        contadores[i].textContent=calculaTempo(tempos[i]);
+    }
+}
+
+function comecacronometro(){
+    atualiazaCronometro();
+    setInterval(atualiazaCronometro, 1000);
+}
+
+comecacronometro();
